@@ -1,0 +1,5 @@
+Maintainer: DomesticMoth
+Section: utils
+Description: Telegram bot to ban users for using premium stickers 
+Recommends: git
+Origin: https://github.com/DomesticMoth/bps
