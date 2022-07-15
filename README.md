@@ -1,4 +1,6 @@
 # Ban Premium Stickers
+![GitHub](https://img.shields.io/github/license/DomesticMoth/bps)
+![Crates.io](https://img.shields.io/crates/v/bps)  
 This bot allows you to prevent the usage of those cursed premium stickers in your telegram chat  
 ![Cursed](https://i.imgur.com/CRCg3rD.png)
 ## Configuration
@@ -26,4 +28,8 @@ git clone https://github.com/DomesticMoth/bps.git
 cd bps
 make build
 make install
+```
+### With cargo install
+```
+cargo install bps
 ```
