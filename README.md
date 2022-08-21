@@ -33,6 +33,50 @@ make install
 ```
 cargo install bps
 ```
+### NixOS flake
+`flake.nix`
+```nix
+{
+  description = "NixOS configurations";
+
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-22.05";
+
+    bps.url = "path:/home/cofob/Documents/Dev/bps";
+    bps.inputs.nixpkgs.follows = "nixpkgs";
+  };
+
+  outputs = { self, nixpkgs, bps }:
+    {
+      nixosConfigurations = {
+        example = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          modules = [
+            ./example.nix
+            bps.nixosModule
+          ];
+        };
+      };
+    };
+}
+```
+
+`example.nix`
+```nix
+{ ... }:
+
+{
+    services.bps = {
+        enable = true;
+        tokenFile = "/path/to/token.env";
+    };
+}
+```
+
+`/path/to/token.env`
+```
+TELOXIDE_TOKEN=11111111:AAAAAAAAAAAAAAAAAAAAA
+```
 ### Prebuild
 You can download prebuilt binary or deb package from the [releases page](https://github.com/DomesticMoth/bps/releases/tag/v0.1.0)  
 Hashes for v0.1.0  
