@@ -4,12 +4,7 @@ rustPlatform.buildRustPackage rec {
   pname = "bps";
   version = "0.1.1";
 
-  src = fetchFromGitHub {
-    owner = "DomesticMoth";
-    repo = pname;
-    rev = "v${version}";
-    hash = "sha256-K3t1rcghph1JNaMFwwGoPuFKqfZRUGbYCDUEmNZxm18=";
-  };
+  src = ./;
 
   cargoSha256 = "sha256-gq90jU6FQKwuZQ6pzleYEVSHTo7wECCLOFYkXCadAr0=";
 
