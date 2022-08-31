@@ -40,7 +40,7 @@ async fn main() {
             if let Some(user) = message.from {
                 if let MediaKind::Sticker(sticker) = message.media_kind {
                     let sticker = sticker.sticker;
-                    if sticker.is_animated {
+                    if sticker.is_animated || sticker.is_animated {
                         log::debug!("Premium sticker by {:?} {}", user.username, user.id.0);
                         if kick { bot.kick_chat_member(chat_id, user.id).await?; }
                         bot.delete_message(chat_id, msg_id).await?;
