@@ -4,7 +4,7 @@ rustPlatform.buildRustPackage rec {
   pname = "bps";
   version = "0.1.1";
 
-  src = ./;
+  src = ./.;
 
   cargoSha256 = "sha256-gq90jU6FQKwuZQ6pzleYEVSHTo7wECCLOFYkXCadAr0=";
 
