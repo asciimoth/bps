@@ -29,7 +29,8 @@
           pkgs.cargo
           pkgs.rustfmt
           pkgs.rust-analyzer
-          pkgs.rustup
+          pkgs.rustup-toolchain-install-master
+          pkgs.openssl
         ];
       };
     });
