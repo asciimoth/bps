@@ -15,3 +15,6 @@
 
 # Dotenv file
 .env
+/.pre-commit-config.yaml
+/local
+/.direnv
