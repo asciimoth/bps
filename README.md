@@ -1,7 +1,7 @@
 # Ban Premium Stickers
 ![GitHub](https://img.shields.io/github/license/DomesticMoth/bps)
 ![Crates.io](https://img.shields.io/crates/v/bps)  
-This bot allows you to prevent the usage of those cursed premium stickers in your telegram chat  
+[This bot](https://t.me/ban_per_second_bot) allows you to prevent the usage of those cursed premium stickers in your telegram chat  
 ![Cursed](https://i.imgur.com/CRCg3rD.png)
 ## Configuration
 Bot is controlling by the following environment variables  
