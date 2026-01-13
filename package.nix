@@ -14,6 +14,6 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "This bot allows you to prevent the usage of those cursed premium stickers in your telegram chat";
     homepage = "https://github.com/DomesticMoth/bps";
-    license = licenses.agpl3;
+    license = licenses.gpl3;
   };
 }
